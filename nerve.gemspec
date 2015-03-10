@@ -23,6 +23,7 @@ Gem::Specification.new do |gem|
 
   gem.add_runtime_dependency "json"
   gem.add_runtime_dependency "zk", "~> 1.9.2"
+  gem.add_runtime_dependency "poseidon", "= 0.0.5"
   gem.add_runtime_dependency "bunny", "= 1.1.0"
   gem.add_runtime_dependency "etcd", "~> 0.2.3"
 
