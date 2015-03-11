@@ -23,7 +23,7 @@ module Nerve
 
         # try to post a message
         log.debug "nerve: publishing to kafka"
-        producer = Poseidon::Producer.new([@host+':'+@port], @client_id)
+        producer = Poseidon::Producer.new([@host+':'+@port.to_s], @client_id)
 
         messages = []
         messages << Poseidon::MessageToSend.new(@topic, 'kafka test message')
